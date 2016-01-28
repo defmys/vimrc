@@ -77,3 +77,8 @@ set expandtab
 set fileencoding=utf-8
 set fileencodings=utf-8,gbk
 color torte
+
+map <F3> :NERDTreeToggle<CR>
+map <F4> :TagbarToggle<CR>
+nmap <C-\> <C-w><C-]><C-w>T
+
