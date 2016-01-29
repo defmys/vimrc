@@ -76,6 +76,7 @@ set tabstop=4
 set expandtab
 set fileencoding=utf-8
 set fileencodings=utf-8,gbk
+set ruler
 color torte
 
 map <F3> :NERDTreeToggle<CR>
