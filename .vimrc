@@ -78,6 +78,7 @@ set expandtab
 set fileencoding=utf-8
 set fileencodings=utf-8,gbk
 set ruler
+set cursorline
 color torte
 
 map <F3> :NERDTreeToggle<CR>
