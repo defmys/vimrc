@@ -92,10 +92,6 @@ let g:ycm_server_log_level = 'info' "default info
 
 
 let g:signify_vcs_list = [ 'git', 'svn' ]
-let g:signify_cursorhold_insert     = 1
-let g:signify_cursorhold_normal     = 1
-let g:signify_update_on_bufenter    = 0
-let g:signify_update_on_focusgained = 1
 
 
 syntax on
