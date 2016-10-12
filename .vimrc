@@ -80,6 +80,8 @@ set fileencodings=utf-8,gbk
 set ruler
 set cursorline
 color torte
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey
 
 map <F3> :NERDTreeToggle<CR>
 map <F4> :TagbarToggle<CR>
