@@ -54,6 +54,7 @@ Plugin  'majutsushi/tagbar'
 
 " airline
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -100,7 +101,7 @@ set ruler
 set cursorline
 set splitbelow
 set laststatus=2
-set t_Co=256
+set term=xterm-256color
 color torte
 set colorcolumn=80
 highlight ColorColumn ctermbg=lightgrey
