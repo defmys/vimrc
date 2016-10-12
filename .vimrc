@@ -56,6 +56,9 @@ Plugin  'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 
+" signify
+Plugin 'mhinz/vim-signify'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -88,6 +91,13 @@ let g:ycm_server_use_vim_stdout = 0 "default 0 (logging to console)
 let g:ycm_server_log_level = 'info' "default info
 
 
+let g:signify_vcs_list = [ 'git', 'svn' ]
+let g:signify_cursorhold_insert     = 1
+let g:signify_cursorhold_normal     = 1
+let g:signify_update_on_bufenter    = 0
+let g:signify_update_on_focusgained = 1
+
+
 syntax on
 set nu
 set ai
@@ -105,6 +115,10 @@ set term=xterm-256color
 color torte
 set colorcolumn=80
 highlight ColorColumn ctermbg=lightgrey
+highlight clear SignColumn
+highlight DiffAdd cterm=bold ctermbg=119 ctermfg=0
+highlight DiffDelete cterm=bold ctermbg=167 ctermfg=0
+highlight DiffChange cterm=bold ctermbg=227 ctermfg=0
 
 map <F3> :NERDTreeToggle<CR>
 map <F4> :TagbarToggle<CR>
